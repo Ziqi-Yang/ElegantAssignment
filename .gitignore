@@ -13,8 +13,7 @@
 .*.lb
 .DS_Store
 clean.bat
-elegant*-cn.pdf
-elegant*-en.pdf
+*.pdf
 *.dates
 
 ## Intermediate documents:
@@ -235,6 +234,7 @@ TSWLatexianTemp*
 
 # auto folder when using emacs and auctex
 ./auto/*
+/.auctex-auto
 *.el
 
 # expex forward references with \gathertags
