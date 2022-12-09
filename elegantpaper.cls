@@ -350,7 +350,7 @@
   frame=tb,
   emphstyle={\small\ttfamily\bfseries\color{Orange}},
   numbers=left,
-  numberstyle= \tiny\color{black},
+  numberstyle= \scriptsize\ttfamily\color{black},
   basicstyle = \small\ttfamily,
   keywordstyle    = \bfseries\color{BrickRed},
   identifierstyle = \bfseries\color{black},
