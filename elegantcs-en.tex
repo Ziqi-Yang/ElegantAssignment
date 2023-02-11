@@ -1,4 +1,5 @@
-\documentclass[lang=en,a4paper,bibend=bibtex]{elegantpaper}
+\documentclass[lang=cn,a4paper,bibend=bibtex]{elegantcs}
+%% \setmonofont{Everson Mono}
 
 \title{ElegantCS: An ElegantPaper Fork focus on Computer Science}
 \author{Ethan DENG \\ Fudan University \and Dongsheng DENG \\ PA Technology}
@@ -12,14 +13,14 @@
 \maketitle
 
 \begin{abstract}
-This documentation illustrates the usage of the \href{https://github.com/ElegantLaTeX/ElegantPaper}{ElegantPaper} template. This template is based on the standard \LaTeX{} article class, which is designed for working paper writing. With this template, you can get rid of all the worries about the format and merely focus on writing. For any question, please leave a message on \href{https://github.com/ElegantLaTeX/ElegantPaper/issues}{GitHub::ElegantPaper/issues}. Want to know more about Elegant\LaTeX{} Templates? Please visit: \href{https://github.com/ElegantLaTeX}{https://github.com/ElegantLaTeX}.\par
+This documentation illustrates the usage of the \href{https://github.com/Ziqi-Yang/ElegantCS}{ElegantCS} template. This template is based on the standard \href{https://github.com/ElegantLaTeX/ElegantPaper}{ElegantPaper} article class, which is designed for working paper writing. With this template, you can get rid of all the worries about the format and merely focus on writing. For any question, please leave a message on \href{https://github.com/Ziqi-Yang/ElegantCS/issues}{GitHub::ElegantCS/issues}.\par
 \keywords{Elegant\LaTeX{}, Working Paper, Template}
 \end{abstract}
 
 
 \noindent\rule{\textwidth}{1pt}
 
-\section*{Differences from ElegantPaper}
+\section*{Features added to ElegantPaper}
 
 \subsection*{Code Block Style}
 
@@ -40,19 +41,19 @@ class Showcase
 }
 \end{lstlisting}
 
-\textbf{Ascii Art}(only support traditional character and 130 charcter width):
+Also, the \lstinline[language=Python]|print("inline code")| example.
+
+\textbf{Ascii Art}:
+\setmonofont{Quivira}
+\lstinputlisting[language=Ascii]{assets/ascii3.txt}
+\defaultfont
 \lstinputlisting[language=Ascii]{assets/ascii.txt}
-\lstinputlisting[language=Ascii]{assets/ascii2.txt}
-
-
-Also, the \lstinline[language=Bash]|echo inline| code example.
 
 \subsection*{Highlight Box}
 
 \hword{highlight box} example
 
 \noindent\rule{\textwidth}{1pt}
-
 
 \section*{Update Notes}
 

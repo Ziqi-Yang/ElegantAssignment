@@ -1,3 +1,7 @@
+*.pdf
+!/elegantcs-en.pdf
+!/elegantcs-cn.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -13,7 +17,6 @@
 .*.lb
 .DS_Store
 clean.bat
-*.pdf
 *.dates
 
 ## Intermediate documents:

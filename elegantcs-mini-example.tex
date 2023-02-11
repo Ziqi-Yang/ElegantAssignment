@@ -1,5 +1,4 @@
-%!TEX program = xelatex
-\documentclass[lang=en,a4paper,bibtex]{elegantpaper}
+\documentclass[lang=en,a4paper,bibtex]{elegantcs}
 % NOTE lang=en when using english
 
 \title{Title}
@@ -7,7 +6,7 @@
 \institute{Your Institute}
 \version{0.10}
 \date{\today} % NOTE \zhtoday when using english
-\addbibresource[location=local]{reference.bib} % FIXME change the content in the reference.bib file
+%% \addbibresource[location=local]{reference.bib} % FIXME change the content in the reference.bib file
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -15,11 +14,12 @@ abstract
 \keywords{Keyword1, Keyword2}
 \end{abstract}
 
-
-
 Hello ElegantCS!
 
+\setmonofont{Quivira}
+\lstinputlisting[language=Ascii]{assets/ascii2.txt}
+\defaultfont
 
-\nocite{*}
-\printbibliography[heading=bibintoc, title=\ebibname]
+%% \nocite{*}
+%% \printbibliography[heading=bibintoc, title=\ebibname]
 \end{document}

@@ -1,6 +1,26 @@
 #+title: ElegantCS
 
-A [[https://github.com/ElegantLaTeX/ElegantPaper][ElegantPaper]] fork that targets Computer Sciences. This fork improves the code-highlighting style provided by =lstlisting=. The detailed difference is noted in the =elegant-en.tex= file.
+A [[https://github.com/ElegantLaTeX/ElegantPaper][ElegantPaper]] fork that targets Computer Sciences. This fork improves the code-highlighting style provided by =lstlisting=. The detailed difference is noted in the =elegantcs-en.tex= file. Here is the aerial view:
+[[./assets/aerial_view_0.png]]
+[[./assets/aerial_view_1.png]]
+
+* Requrement
+For *unicode ascii art* supprt, the tex library =ctex= is required. It is installed by default for texlive chinese. This library is designed for Chinese typesetting, and it magically solves the line break error caused unicode in =lstings= library. Recently I have no plan to find the source of the error, so just use it instead. It can be found on [[https://ctan.org/pkg/ctex?lang=en][CTAN]]. 
+
+** Ascii Art
+*If you use asciiart which only contains traditional characters, then you can omit the section*
+Additionally, a font support *unicode special character* is required, here is the [[https://www.fileformat.info/info/unicode/block/braille_patterns/fontsupport.htm][capable font list]]. I recommend you to use the [[http://www.quivira-font.com/][quivira]]. If you are an =Arch Linux= user, you can install it easily by command
+
+#+BEGIN_SRC shell
+paru -S quivira
+#+end_src
+
+This is an simple example illustrate how to use *unicode ascii art*:
+#+BEGIN_SRC latex
+\setmonofont{Quivira} %% use Quivira font for lisings.
+\lstinputlisting[language=Ascii]{assets/ascii3.txt} %% you can also use \begin{lstlisting} expression, which can be in elegantcs-en.tex file
+\defaultfont %% set font back to default
+#+end_src
 
 * License
 This work is released under the LaTeX Project Public License, v1.3c or later.
