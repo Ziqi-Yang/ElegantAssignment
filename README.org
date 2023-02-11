@@ -5,7 +5,8 @@ A [[https://github.com/ElegantLaTeX/ElegantPaper][ElegantPaper]] fork that targe
 [[./assets/aerial_view_1.png]]
 
 * Requrement
-For *unicode ascii art* supprt, the tex library =ctex= is required. It is installed by default for texlive chinese. This library is designed for Chinese typesetting, and it magically solves the line break error caused unicode in =lstings= library. Recently I have no plan to find the source of the error, so just use it instead. It can be found on [[https://ctan.org/pkg/ctex?lang=en][CTAN]]. 
+1. Use xelatex(tested) or luatex for compiling.
+2. For *unicode ascii art* supprt, the tex library =ctex= is required. It is installed by default for texlive chinese. This library is designed for Chinese typesetting, and it magically solves the line break error caused unicode in =lstings= library. Recently I have no plan to find the source of the error, so just use it instead. It can be found on [[https://ctan.org/pkg/ctex?lang=en][CTAN]]. 
 
 ** Ascii Art
 *If you use asciiart which only contains traditional characters, then you can omit the section*
