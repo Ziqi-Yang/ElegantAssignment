@@ -9,7 +9,7 @@ For *unicode ascii art* supprt, the tex library =ctex= is required. It is instal
 
 ** Ascii Art
 *If you use asciiart which only contains traditional characters, then you can omit the section*
-Additionally, a font support *unicode special character* is required, here is the [[https://www.fileformat.info/info/unicode/block/braille_patterns/fontsupport.htm][capable font list]]. I recommend you to use the [[http://www.quivira-font.com/][quivira]]. If you are an =Arch Linux= user, you can install it easily by command
+Additionally, a font support *unicode special character* is required, here is the [[https://www.fileformat.info/info/unicode/block/braille_patterns/fontsupport.htm][capable font list]]. According to my [[./asciiart-font-test.pdf][test]], I recommend you to use the [[http://www.quivira-font.com/][quivira]]. If you are an =Arch Linux= user, you can install it easily by command
 
 #+BEGIN_SRC shell
 paru -S quivira

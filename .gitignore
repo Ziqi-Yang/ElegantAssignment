@@ -1,6 +1,7 @@
 *.pdf
 !/elegantcs-en.pdf
 !/elegantcs-cn.pdf
+!/asciiart-font-test.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
