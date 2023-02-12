@@ -1,11 +1,11 @@
 #+title: ElegantCS
 
-A [[https://github.com/ElegantLaTeX/ElegantPaper][ElegantPaper]] fork that targets Computer Sciences. This fork improves the code-highlighting style provided by =lstlisting=. The detailed difference is noted in the [[./elegantcs-en.pdf][elegantcs-en.pdf]] file. Here is the aerial view:
+A [[https://github.com/ElegantLaTeX/ElegantPaper][ElegantPaper]] fork that targets Computer Sciences paper writing. This fork improves the code-highlighting style provided by =lstlisting= and provivdes ascii art suppoort. The detailed difference is noted in the [[./elegantcs-en.pdf][elegantcs-en.pdf]] file. Here is the aerial view:
 [[./assets/aerial_view_0.png]]
 [[./assets/aerial_view_1.png]]
 
 * Requrement
-1. Use xelatex(tested) or luatex for compiling.
+1. Use *xelatex* (tested) or *luatex* for compiling.
 2. For *unicode ascii art* supprt, the tex library =ctex= is required. It is installed by default for texlive chinese. This library is designed for Chinese typesetting, and it magically solves the line break error caused unicode in =lstings= library. Recently I have no plan to find the source of the error, so just use it instead. It can be found on [[https://ctan.org/pkg/ctex?lang=en][CTAN]]. 
 
 ** Ascii Art
@@ -16,12 +16,20 @@ Additionally, a font support *unicode special character* is required, here is th
 paru -S quivira
 #+end_src
 
-This is an simple example illustrate how to use *unicode ascii art*:
+This is an simple example illustrating how to use *unicode ascii art*:
 #+BEGIN_SRC latex
 \setmonofont{Quivira} %% use Quivira font for lisings.
 \lstinputlisting[language=Ascii]{assets/ascii3.txt} %% you can also use \begin{lstlisting} expression, which can be in elegantcs-en.tex file
 \defaultfont %% set font back to default
 #+end_src
+
+* How to use this class
+You can either place the class file =elegantcs.cls= at the same directory of your tex file, or move it to the one of the following directory:
+- On a *Unix-based* system (e.g., Linux, macOS), the user class directory is usually located at =~/texmf/tex/latex/=.
+- On *Windows*, it may be located in the user's home directory (e.g., =C:\Users\<username>\texmf\tex\latex\=).
+- On some systems, the user class directory may be part of the local TeX tree, which is located at =<tex-install-dir>/texmf-local/tex/latex/=.
+
+The tex file =elegantcs-mini-example.tex= illustrates how to use the this class.
 
 * License
 This work is released under the LaTeX Project Public License, v1.3c or later.
