@@ -132,13 +132,10 @@
   \RequirePackage[scaled=.90]{helvet}
 \fi
 
-%% This line is reuqired by both of en and cn language because when you use full unicode in
-%% lstlisting(like ⣿ character), there will be no line break. It is strange :(.
-\RequirePackage[UTF8,scheme=plain,fontset=none]{ctex}
 
 \ifdefstring{\ELEGANT@lang}{cn}{
   \ifdefstring{\ELEGANT@chinesefont}{founder}{
-    %% \RequirePackage[UTF8,scheme=plain,fontset=none]{ctex} %% Move above.
+    \RequirePackage[UTF8,scheme=plain,fontset=none]{ctex}
     \setCJKmainfont[BoldFont={FZHei-B01},ItalicFont={FZKai-Z03}]{FZShuSong-Z01}
     \setCJKsansfont[BoldFont={FZHei-B01}]{FZKai-Z03}
     \setCJKmonofont[BoldFont={FZHei-B01}]{FZFangSong-Z02}
@@ -159,7 +156,13 @@
   
   \AfterEndPreamble{
     \setlength\parindent{2\ccwd}}
-}{\relax}
+}{
+  %% This line also reuqired by english because when you want to use full unicode in
+  %% lstlisting(like ⣿ character), there will be no line break. It is strange :
+  %% TODO: in the future, the package should be conditionally added depending on whether
+  %% user want Ascii Art full unicode support
+  \RequirePackage[UTF8,scheme=plain,fontset=none]{ctex}
+}
 
 
 \ifcsname kaishu\endcsname
@@ -346,7 +349,7 @@
   \par
 }
 
-\RequirePackage{listingsutf8}
+\RequirePackage{listings}
 \renewcommand{\ttdefault}{cmtt}
 
 % default code style
